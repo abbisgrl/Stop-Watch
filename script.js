@@ -47,11 +47,28 @@ function stopwatch(){
             minute = 0;
             second = 0;
         }
-        
-        document.getElementById('hours').innerHTML = hour;
-        document.getElementById('minute').innerHTML = minute;
-        document.getElementById('second').innerHTML = second;
-        document.getElementById('msecond').innerHTML = ms;
+
+        var hourString = hour;
+        var minuteString = minute;
+        var secondString = second;
+        var mSecond = ms;
+
+        if(hour<10){
+            hourString = "0"+hourString;
+        }
+        if(minute<10){
+            minuteString = "0"+minuteString;
+        }
+        if(second<10){
+            secondString = "0"+secondString;
+        }
+        if(ms<10){
+            mSecond = "0"+mSecond;
+        }
+        document.getElementById('hours').innerHTML = hourString;
+        document.getElementById('minute').innerHTML = minuteString;
+        document.getElementById('second').innerHTML = secondString;
+        document.getElementById('msecond').innerHTML = mSecond;
         
         setTimeout("stopwatch()",10);
     }
