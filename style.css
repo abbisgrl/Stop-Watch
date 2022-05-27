@@ -1,13 +1,17 @@
+/* body with no margin and full display */
 body, html {
     height: 100%;
     width: 100%;
     margin: 0;
-  }
+}
+
+/* setting of the background image */
 body{
     background-image: url(assets/pexels-gradienta-7130475.jpg);
     background-size: cover;
     align-items: center;
 }
+/* header styling  */
 header{
     position: relative;
     left: 30%;
@@ -16,6 +20,7 @@ header{
     font-weight: 600;
     color: aqua;
 }
+/* Container for the main box in which watch display and buttons are placed */
 .container{
     height: 50%;
     width: 50%;
@@ -29,6 +34,7 @@ header{
     align-items: center;
 }
 
+/* display for the stopwatch */
 .timer{   
     height: 45%;
     width: 90%;
@@ -40,17 +46,21 @@ header{
     font-weight: 600;
 }
 
+/* units of the watch */
 #text{
     display:flex ;
     justify-content: space-between;
     flex-wrap: wrap;
     font-size: 2rem ;
 }
+/* digits of the watch */
 .digit{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+/* buttons box  */
 .buttons{
     width: 90%;
     display: flex;
@@ -58,6 +68,7 @@ header{
     justify-content: space-between;
 }
 
+/* buttons for start ,stop and reset */
 .btn{
     height: 150%;
     width: 30%;
@@ -69,6 +80,7 @@ header{
     color: darkgrey;
 }
 
+/* individual buttons styling  */
 #start{
     background-color: green;
 }

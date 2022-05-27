@@ -6,20 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stop Watch</title>
+    <!-- Adding the fevicon icon ,css file and fontawasome link -->
+    <link rel="shortcut icon" type="image/jpg" href="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/stopwatch-design-template-421b0fb1b2a63010cde41430ad924886_screen.jpg?ts=1627216699"/>
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/623be7c2b8.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <!-- header for the stopwatch title -->
     <header>STOPWATCH</header>
+
+    <!-- container for the watch timer and button which is locate in middle of the page -->
     <div class="container">
+
+        <!-- Timer is the container for displaying the Stop watch -->
         <div class="timer">
+
+            <!-- units of the watch which is under text -->
             <div id="text">
                 <span>Hr.</span>
                 <span>Min.</span>
                 <span>Sec.</span>
                 <span>M.s.</span>
             </div>
+
+            <!-- Timer  -->
             <div class="digit">
                 <span class="digit" id="hours">00</span>
                 <span class="digit">:</span>
@@ -29,15 +40,21 @@
                 <span class="digit">:</span>
                 <span class="digit" id="msecond">00</span>
             </div>
-
+            
         </div>
+
+        <!-- This is button container for all three buttons -->
         <div class="buttons">
             <button class="btn" id="start"><i class="fa-solid fa-circle-play"></i> Start</button>
             <button class="btn" id="stop"><i class="fa-solid fa-circle-stop"></i> Stop</button>
             <button class="btn" id="reset"><i class="fa-solid fa-arrows-spin"></i> Reset</button>
         </div>
     </div>
+    
+
+    <!-- Adding the javascript file to the html -->
     <script src="./script.js"></script>
+
 </body>
 
 </html>
