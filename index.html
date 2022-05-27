@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,26 @@
     <title>Stop Watch</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <div class="container">
         <div class="timer">
-            <span class="digit" id="hours">00</span>
-            <span class="digit">:</span>
-            <span class="digit" id="minute">00</span>
-            <span class="digit">:</span>
-            <span class="digit" id="second">00</span>
-            <span class="digit">:</span>
-            <span>000</span>
+            <div id="text">
+                <span>Hr.</span>
+                <span>Min.</span>
+                <span>Sec.</span>
+                <span>Cen.S</span>
+            </div>
+            <div class="digit">
+                <span class="digit" id="hours">00</span>
+                <span class="digit">:</span>
+                <span class="digit" id="minute">00</span>
+                <span class="digit">:</span>
+                <span class="digit" id="second">00</span>
+                <span class="digit">:</span>
+                <span>000</span>
+            </div>
+           
         </div>
         <div class="buttons">
             <button class="btn" id="start">Start</button>
@@ -26,4 +37,5 @@
     </div>
     <script src="./script.js"></script>
 </body>
+
 </html>
