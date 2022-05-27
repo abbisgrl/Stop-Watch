@@ -11,15 +11,17 @@ body{
     background-size: cover;
     align-items: center;
 }
+
 /* header styling  */
-header{
-    position: relative;
+#header{
+    position: absolute;
     left: 30%;
     top: 3%;
     font-size: 5rem;
     font-weight: 600;
     color: aqua;
 }
+
 /* Container for the main box in which watch display and buttons are placed */
 .container{
     height: 50%;
@@ -32,6 +34,7 @@ header{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    border-radius: 10px;
 }
 
 /* display for the stopwatch */
