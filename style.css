@@ -10,7 +10,6 @@ body{
     justify-content: center;
     align-items: center;
 }
-
 .container{
     height: 50%;
     width: 50%;
@@ -55,6 +54,10 @@ body{
     width: 30%;
     font-size: medium;
     font-weight: 600;
+    cursor: pointer;
+}
+.btn:hover{
+    color: blue;
 }
 
 #start{
